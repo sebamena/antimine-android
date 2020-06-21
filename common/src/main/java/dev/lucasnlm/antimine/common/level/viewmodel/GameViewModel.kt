@@ -102,7 +102,7 @@ class GameViewModel @ViewModelInject constructor(
         }
 
         saveId.postValue(save.uid.toLong())
-        analyticsManager.sentEvent(Analytics.ResumePreviousGame())
+        analyticsManager.sentEvent(Analytics.ResumePreviousGame)
         return setup
     }
 
