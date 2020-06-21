@@ -19,7 +19,7 @@ class TranslatorsFragment : Fragment(R.layout.fragment_translators) {
         translators.apply {
             addItemDecoration(DividerItemDecoration(view.context, DividerItemDecoration.VERTICAL))
             layoutManager = LinearLayoutManager(view.context)
-            adapter = aboutViewModel.getTranslators()
+            adapter = TranslatorsAdapter(aboutViewModel.getTranslatorsList())
         }
     }
 
